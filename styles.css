@@ -4,12 +4,9 @@
     --background: #181818;
 }
 
-html {
-    width: 100vw;
-    height: 100vh;
-}
-
-body {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -17,7 +14,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 5rem;
     color: var(--purple);
 }
@@ -107,4 +104,27 @@ li {
 
 .wrapper-projects strong {
     color: var(--pink);
+}
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer small {
+    color: #FFFFFF;
+    padding-top: 0.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+nav img {
+    width: 2rem;
 }
