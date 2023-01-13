@@ -59,7 +59,6 @@ header section div strong span {
     display: flex;
     width: 90%;
     max-width: 700px;
-    margin-top: 2rem;
     flex-direction: column;
 }
 
@@ -81,6 +80,17 @@ p {
     max-width: 700px;
     margin-top: 2rem;
     flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li::before {
+    content: "• ";
+    color: var(--pink);
 }
 
 li {
